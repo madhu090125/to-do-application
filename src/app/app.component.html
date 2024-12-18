@@ -18,14 +18,8 @@
       <ng-container matColumnDef="Action">
         <mat-header-cell *matHeaderCellDef> Action </mat-header-cell>
         <mat-cell *matCellDef="let element">
-            <!-- <span class="icon-container"> -->
-                <!-- <button mat-mini-fab color="primary"><mat-icon color="primary">done</mat-icon></button>
-                <button mat-mini-fab color="warn"><mat-icon color="warn">close</mat-icon></button> -->
                 <button mat-button color="primary" (click)="onclickDone(element)"><mat-icon color="primary">done</mat-icon></button>
-                <button mat-button color="warn" (click)="onClickClose(element)"><mat-icon color="warn">close</mat-icon></button>
-                
-            <!-- </span> -->
-            
+                <button mat-button color="warn" (click)="onClickClose(element)"><mat-icon color="warn">close</mat-icon></button> 
         </mat-cell>
       </ng-container>
 
